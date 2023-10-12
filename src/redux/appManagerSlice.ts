@@ -7,7 +7,7 @@ export const appManagerSlice = createSlice({
   initialState,
 
   reducers: {
-    setTodo: (state, action) => {
+    addTodo: (state, action) => {
       state.todos = action.payload;
     },
 
@@ -28,7 +28,7 @@ export const appManagerSlice = createSlice({
 });
 
 //export actions
-export const { setTodo, toggleTheme } = appManagerSlice.actions;
+export const { addTodo, toggleTheme } = appManagerSlice.actions;
 
 //export data
 export const selectTodos = (state: RootState) => state.appManager.todos;
