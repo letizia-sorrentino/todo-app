@@ -7,6 +7,13 @@
   width: 100%;
 }
 
+.AppMain {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 .appTitle {
   position: absolute;
   color: hsl(0, 0%, 100%);
@@ -14,29 +21,36 @@
 }
 
 .todoFormContainer {
- 
-  margin: 2rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
-  display: flex;
+  padding: 1rem;
+  margin: 0 2rem;
+  position: absolute;
+  top: 7rem;
+  width: 70vw;
 }
 
 .todoForm {
   border: none;
-  margin: 2rem;
 }
 
 .todoContainer {
-  height: 80vh;
-  margin: 2rem;
+  margin: 0 2rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
+  position: absolute;
+  padding: 0 1rem;
+  top: 11rem;
+  height: 60vh;
+  width: 70vw;
 
 }
 
 .todoList {
-  margin-left: 2rem;
-  border-bottom: 0.1rem solid;
+  border-bottom: 2px solid hsl(0, 0%, 98%);
+  padding: 1rem 0;
 }
 
-.todoItem {}
+.attribution {
+  margin: 2rem;
+}
