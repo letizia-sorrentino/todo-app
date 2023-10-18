@@ -7,6 +7,17 @@
   width: 100%;
 }
 
+
+.headerContainer {
+  display: grid;
+  position: absolute;
+}
+
+.iconMoon {
+  height: 2rem;
+  width: 2rem;
+}
+
 .AppMain {
   display: flex;
   flex-direction: column;
