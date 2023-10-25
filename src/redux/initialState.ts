@@ -1,6 +1,6 @@
 export interface StateType {
   count: number;
-  todos: { name: string; id: number }[];
+  todos: { name: string; id: number; isDone: boolean }[];
   isDarkTheme: boolean;
 }
 

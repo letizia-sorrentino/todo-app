@@ -3,9 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   addTodo,
   removeTodo,
+  tickTodo,
   selectCount,
   selectTodos,
 } from "../redux/appManagerSlice";
+import iconCross from "../assets/icon-cross.svg";
+import "../styles/Todos.css";
 
 const Todos = () => {
   const [todo, setTodo] = useState("");
@@ -14,7 +17,6 @@ const Todos = () => {
   const count = useSelector(selectCount);
 
   const onInput = (e: React.FormEvent<HTMLInputElement>) => {
-    e.preventDefault();
     setTodo(e.currentTarget.value);
   };
 
@@ -23,6 +25,11 @@ const Todos = () => {
     dispatch(addTodo(todo));
     setTodo(""); //clear the input field
     console.log("item added", count);
+  };
+
+  const onTicked = (id: number) => {
+    dispatch(tickTodo(id));
+    console.log("todo checked");
   };
 
   const onTodoDone = (id: number) => {
@@ -47,21 +54,35 @@ const Todos = () => {
         {count > 0 &&
           todos.map((item) => {
             return (
-              <>
-                <div className="todoList">
+              <div className="todoList" key={item.id}>
+                {" "}
+                <input
+                  className="todoItem"
+                  type="radio"
+                  onClick={() => onTicked(item.id)}
+                ></input>
+                <label
+                  className={item.isDone ? "strike" : ""}
+                  htmlFor="InputId"
+                >
                   {" "}
-                  <input
-                    className="todoItem"
-                    type="radio"
-                    key={item.id}
-                    onClick={() => onTodoDone(item.id)}
-                  ></input>
-                  <label htmlFor="InputId"> {item.name}</label>;
-                </div>
-              </>
+                  {item.name}
+                </label>
+                <img
+                  className="iconCross"
+                  src={iconCross}
+                  alt="cross-icon"
+                  key={item.id}
+                  onClick={() => onTodoDone(item.id)}
+                />
+              </div>
             );
           })}
-        {count === 0 && <></>}
+        {count === 0 && (
+          <>
+            <p>No todos yet.</p>
+          </>
+        )}
       </div>
     </>
   );

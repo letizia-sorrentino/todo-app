@@ -1,6 +1,6 @@
 :root {
   font-family: Josefin Sans, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 400, 700;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -31,6 +31,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: hsl(0, 0%, 98%);
+  font-size: 1.125rem;
 }
 
 h1 {

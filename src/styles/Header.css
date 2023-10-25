@@ -1,0 +1,26 @@
+.headerImage {
+  width: 100%;
+  position: relative;
+}
+
+.headerContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 2.5rem;
+}
+
+.iconMoon {
+  height: 1.75rem;
+  width: 1.75rem;
+  position: absolute;
+  left: 80vw;
+}
+
+
+.appTitle {
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  margin-left: 2rem;
+  font-size: 2rem;
+}

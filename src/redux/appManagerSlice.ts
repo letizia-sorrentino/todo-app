@@ -8,7 +8,11 @@ export const appManagerSlice = createSlice({
 
   reducers: {
     addTodo: (state, action) => {
-      const newTodo = { name: action.payload, id: Math.random() * 100 };
+      const newTodo = {
+        name: action.payload,
+        id: Math.random() * 100,
+        isDone: false,
+      };
       state.todos.push(newTodo);
       state.count += 1;
     },
@@ -18,14 +22,10 @@ export const appManagerSlice = createSlice({
       state.count -= 1;
     },
 
-    onDoneToggle: (state, action) => {
-      const todoIndex = state.todos.findIndex(
-        (todo) => todo.id === action.payload
-      );
-      if (todoIndex !== -1) {
-        state.todos = state.todos.filter((todo) => todo.id !== action.payload);
-      } else {
-        state.todos.push(action.payload);
+    tickTodo: (state, action) => {
+      const tickedTodo = state.todos.find((todo) => todo.id === action.payload);
+      if (tickedTodo) {
+        tickedTodo.isDone = !tickedTodo.isDone;
       }
     },
 
@@ -36,7 +36,7 @@ export const appManagerSlice = createSlice({
 });
 
 //export actions
-export const { addTodo, removeTodo, onDoneToggle, toggleTheme } =
+export const { addTodo, removeTodo, tickTodo, toggleTheme } =
   appManagerSlice.actions;
 
 //export data
