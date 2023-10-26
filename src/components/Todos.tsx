@@ -6,6 +6,7 @@ import {
   tickTodo,
   selectCount,
   selectTodos,
+  selectIsDarkTheme,
 } from "../redux/appManagerSlice";
 import iconCross from "../assets/icon-cross.svg";
 import "../styles/Todos.css";
@@ -15,6 +16,7 @@ const Todos = () => {
   const dispatch = useDispatch();
   const todos = useSelector(selectTodos);
   const count = useSelector(selectCount);
+  const isDarkTheme = useSelector(selectIsDarkTheme);
 
   const onInput = (e: React.FormEvent<HTMLInputElement>) => {
     setTodo(e.currentTarget.value);
@@ -39,7 +41,12 @@ const Todos = () => {
 
   return (
     <>
-      <form className="todoFormContainer" onSubmit={handleSubmit}>
+      <form
+        className={`todoFormContainer ${
+          isDarkTheme ? "darkTheme" : "lightTheme"
+        }`}
+        onSubmit={handleSubmit}
+      >
         <input
           className="todoForm"
           placeholder="Create a new todo..."
@@ -50,7 +57,9 @@ const Todos = () => {
         />
       </form>
 
-      <div className="todoContainer">
+      <div
+        className={`todoContainer ${isDarkTheme ? "darkTheme" : "lightTheme"}`}
+      >
         {count > 0 &&
           todos.map((item) => {
             return (
@@ -83,6 +92,19 @@ const Todos = () => {
             <p>No todos yet.</p>
           </>
         )}
+
+        <div
+          className={`todoCounter ${isDarkTheme ? "darkTheme" : "lightTheme"}`}
+        >
+          <p className="counter"> items left </p>
+          <p className="clearButton">Clear Completed</p>
+        </div>
+      </div>
+
+      <div className={`todoMenu ${isDarkTheme ? "darkTheme" : "lightTheme"}`}>
+        <p className="menuItem">All</p>
+        <p className="menuItem">Active</p>
+        <p className="menuItem">Completed</p>
       </div>
     </>
   );

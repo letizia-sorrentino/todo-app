@@ -1,5 +1,6 @@
-.todoFormContainer {
-    background-color: #fff;
+/* Light theme colours */
+.lightTheme .todoFormContainer {
+    background-color: hsl(0, 0%, 100%);
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 0 2rem;
@@ -8,23 +9,23 @@
     width: 70vw;
 }
 
-.todoForm {
+.lightTheme .todoForm {
     border: none;
+    background-color: hsl(0, 0%, 100%);
 }
 
-.todoContainer {
+.lightTheme .todoContainer {
     margin: 0 2rem;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     border-radius: 0.5rem;
     position: absolute;
     padding: 0 1rem;
     top: 11rem;
-    height: 60vh;
     width: 70vw;
 
 }
 
-.todoList {
+.lightTheme .todoList {
     border-bottom: 2px solid hsl(0, 0%, 98%);
     padding: 1rem 0;
     display: grid;
@@ -32,9 +33,9 @@
     justify-items: flex-start;
 }
 
-.todoItem {
+.lightTheme .todoItem {
     appearance: none;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 100%);
     margin: 0;
     font: inherit;
     width: 1.15em;
@@ -45,18 +46,135 @@
 
 }
 
-.todoItem:checked {
-    background-color: #ff66c4;
-    border-color: #ff66c4;
-    color: #fff;
+.lightTheme .todoItem:checked {
+    background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    color: hsl(0, 0%, 100%);
 
 }
 
-.strike {
+.lightTheme .strike {
     text-decoration: line-through;
-    color: #888;
+    color: hsl(233, 11%, 84%);
 }
 
-.iconCross {
+.lightTheme .iconCross {
     justify-self: end;
+}
+
+.lightTheme .todoCounter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(233, 11%, 84%);
+    font-size: 0.75rem;
+}
+
+.lightTheme .todoMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    top: 11rem;
+    width: 70vw;
+}
+
+.lightTheme .menuItem:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+
+/* Dark theme colours */
+.darkTheme .todoFormContainer {
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 2rem;
+    position: absolute;
+    top: 7rem;
+    width: 70vw;
+}
+
+.darkTheme .todoForm {
+    border: none;
+    background-color: hsl(235, 24%, 19%);
+}
+
+
+.darkTheme .todoContainer {
+    margin: 0 2rem;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 0.5rem;
+    position: absolute;
+    padding: 0 1rem;
+    top: 11rem;
+    width: 70vw;
+
+}
+
+.darkTheme .todoList {
+    border-bottom: 2px solid hsl(0, 0%, 98%);
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    justify-items: flex-start;
+}
+
+.darkTheme .todoItem {
+    appearance: none;
+    background-color: hsl(235, 24%, 19%);
+    margin: 0;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1rem solid hsl(0, 0%, 90%);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+
+}
+
+.darkTheme .todoItem:checked {
+    background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+.darkTheme .strike {
+    text-decoration: line-through;
+    color: hsl(233, 11%, 84%);
+}
+
+.darkTheme .iconCross {
+    justify-self: end;
+}
+
+.darkTheme .todoCounter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(233, 11%, 84%);
+    background-color: hsl(235, 24%, 19%);
+    font-size: 0.75rem;
+}
+
+.darkTheme .todoMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    top: 11rem;
+    width: 70vw;
+}
+
+.darkTheme .menuItem:hover {
+    color: hsl(220, 98%, 61%);
 }

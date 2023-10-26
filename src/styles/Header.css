@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.headerImageDesktop {
+  display: none;
+}
+
 .headerContainer {
   display: flex;
   position: absolute;
@@ -10,9 +14,9 @@
   top: 2.5rem;
 }
 
-.iconMoon {
-  height: 1.75rem;
-  width: 1.75rem;
+.iconMode {
+  height: 1.5rem;
+  width: 1.5rem;
   position: absolute;
   left: 80vw;
 }
@@ -20,7 +24,21 @@
 
 .appTitle {
   position: absolute;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   margin-left: 2rem;
   font-size: 2rem;
+}
+
+
+/* Desktop */
+@media (min-width:960px) {
+  .headerImage {
+    display: none;
+  }
+
+  .headerImageDesktop {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
 }

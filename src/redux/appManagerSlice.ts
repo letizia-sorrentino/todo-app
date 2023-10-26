@@ -29,6 +29,8 @@ export const appManagerSlice = createSlice({
       }
     },
 
+
+    
     toggleTheme: (state) => {
       state.isDarkTheme = !state.isDarkTheme;
     },
