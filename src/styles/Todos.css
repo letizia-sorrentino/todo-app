@@ -1,5 +1,5 @@
 .todoFormContainer {
-    background-color: hsl(0, 0%, 100%);
+    background-color: #fff;
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 0 2rem;
@@ -14,7 +14,7 @@
 
 .todoContainer {
     margin: 0 2rem;
-    background-color: hsl(0, 0%, 100%);
+    background-color: #fff;
     border-radius: 0.5rem;
     position: absolute;
     padding: 0 1rem;
@@ -46,8 +46,8 @@
 }
 
 .todoItem:checked {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #ff66c4;
+    border-color: #ff66c4;
     color: #fff;
 
 }
@@ -56,7 +56,6 @@
     text-decoration: line-through;
     color: #888;
 }
-
 
 .iconCross {
     justify-self: end;

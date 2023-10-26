@@ -1,12 +1,59 @@
-#root {
+:root {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400, 700;
   min-width: 375px;
   max-width: 1440px;
   margin: 0;
+  --background-color: #fffff8;
+  --transparent-bg: #0000000d;
+  --text-color: #161616;
+  --link-dec: #161616;
+  --link-color: #ff0000;
+  --button-bg-hov: #ff000076;
+  --button-text: #2b2b2b;
+  --overlay-color: #1616167d;
+
 }
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 1.125rem;
+  background: #fff;
+}
+
 
 .AppMain {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+}
+
+.Appfooter {
+  background-color: blueviolet;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #161616;
+    --transparent-bg: #fffff80f;
+    --text-color: #fffff8;
+    --link-dec: #161616;
+    --link-color: #00ffff;
+    --button-bg-hov: #00ffff76;
+    --button-text: #00ffff;
+    --link-dec: #fffff8;
+    --overlay-color: #fffff8a5;
+  }
+
+  html {
+    color-scheme: dark;
+  }
 }

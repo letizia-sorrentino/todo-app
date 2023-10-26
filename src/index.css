@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Josefin Sans, Arial, sans-serif;
   font-weight: 400, 700;
 
@@ -74,3 +74,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #213547;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #213547;
+  }
+} */

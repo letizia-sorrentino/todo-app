@@ -20,7 +20,7 @@
 
 .appTitle {
   position: absolute;
-  color: hsl(0, 0%, 100%);
+  color: #fff;
   margin-left: 2rem;
   font-size: 2rem;
 }
