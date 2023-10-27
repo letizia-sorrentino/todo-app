@@ -12,6 +12,7 @@
   position: absolute;
   width: 100%;
   top: 2.5rem;
+  justify-content: space-between;
 }
 
 .iconMode {
@@ -26,6 +27,7 @@
   position: absolute;
   color: hsl(0, 0%, 100%);
   margin-left: 2rem;
+  margin-top: 0;
   font-size: 2rem;
 }
 

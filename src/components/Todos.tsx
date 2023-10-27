@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   addTodo,
   removeTodo,
-  tickTodo,
+  checkTodo,
   selectCount,
   selectTodos,
   selectIsDarkTheme,
@@ -29,8 +29,8 @@ const Todos = () => {
     console.log("item added", count);
   };
 
-  const onTicked = (id: number) => {
-    dispatch(tickTodo(id));
+  const onTodoChecked = (id: number) => {
+    dispatch(checkTodo(id));
     console.log("todo checked");
   };
 
@@ -47,6 +47,7 @@ const Todos = () => {
         }`}
         onSubmit={handleSubmit}
       >
+        <input className="checkbox" type="checkbox" id="checkbox" />
         <input
           className="todoForm"
           placeholder="Create a new todo..."
@@ -65,16 +66,15 @@ const Todos = () => {
             return (
               <div className="todoList" key={item.id}>
                 {" "}
-                <input
-                  className="todoItem"
-                  type="radio"
-                  onClick={() => onTicked(item.id)}
-                ></input>
                 <label
                   className={item.isDone ? "strike" : ""}
                   htmlFor="InputId"
                 >
-                  {" "}
+                  <input
+                    className={item.isDone ? "checked" : "unchecked"}
+                    type="checkbox"
+                    onClick={() => onTodoChecked(item.id)}
+                  />{" "}
                   {item.name}
                 </label>
                 <img

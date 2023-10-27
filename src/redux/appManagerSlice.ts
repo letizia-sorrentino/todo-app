@@ -22,15 +22,15 @@ export const appManagerSlice = createSlice({
       state.count -= 1;
     },
 
-    tickTodo: (state, action) => {
-      const tickedTodo = state.todos.find((todo) => todo.id === action.payload);
-      if (tickedTodo) {
-        tickedTodo.isDone = !tickedTodo.isDone;
+    checkTodo: (state, action) => {
+      const checkedTodo = state.todos.find(
+        (todo) => todo.id === action.payload
+      );
+      if (checkedTodo) {
+        checkedTodo.isDone = !checkedTodo.isDone;
       }
     },
 
-
-    
     toggleTheme: (state) => {
       state.isDarkTheme = !state.isDarkTheme;
     },
@@ -38,7 +38,7 @@ export const appManagerSlice = createSlice({
 });
 
 //export actions
-export const { addTodo, removeTodo, tickTodo, toggleTheme } =
+export const { addTodo, removeTodo, checkTodo, toggleTheme } =
   appManagerSlice.actions;
 
 //export data
