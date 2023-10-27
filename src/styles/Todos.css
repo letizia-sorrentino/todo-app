@@ -37,13 +37,11 @@
     justify-self: flex-end;
 }
 
-
 .lightTheme .todoCounter {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    color: hsl(233, 11%, 84%);
+    color: hsl(236, 9%, 61%);
     font-size: 0.75rem;
 }
 

@@ -25,6 +25,22 @@ const Todos = () => {
     console.log("item removed");
   };
 
+  const clearCompleted = (id: number) => {
+    todos.filter((item) => {
+      item.isDone;
+      dispatch(removeTodo(id));
+      console.log("clear completed");
+    });
+  };
+
+  //calculate the total todos
+  let total = 0;
+  todos.forEach((item) => {
+    if (item.id) {
+      total++;
+    }
+  });
+
   return (
     <>
       <div
@@ -67,8 +83,10 @@ const Todos = () => {
         <div
           className={`todoCounter ${isDarkTheme ? "darkTheme" : "lightTheme"}`}
         >
-          <p className="counter"> items left </p>
-          <p className="clearButton">Clear Completed</p>
+          <p className="counter"> {total} items left </p>
+          <button className="clearButton" onClick={() => clearCompleted()}>
+            Clear Completed
+          </button>
         </div>
       </div>
     </>
