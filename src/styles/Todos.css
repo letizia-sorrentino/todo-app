@@ -1,91 +1,41 @@
 /* Light theme colours */
-.lightTheme .todoFormContainer {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 0 2rem;
-    position: absolute;
-    top: 7rem;
-    width: 70vw;
-    display: flex;
-    gap: 1rem;
-}
-
-.lightTheme .todoForm {
-    outline: none;
-    border: none;
-    background-color: hsl(0, 0%, 100%);
-
-}
-
-.lightTheme input::placeholder {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.lightTheme .checkbox {
-    appearance: none;
-    background-color: hsl(0, 0%, 100%);
-    border: 0.1rem solid hsl(0, 0%, 90%);
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-}
-
 .lightTheme .todoContainer {
-    margin: 0 2rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.5rem;
     position: absolute;
     padding: 0 1rem;
     top: 11rem;
-    width: 70vw;
-
+    width: 80vw;
 }
 
 .lightTheme .todoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lightTheme .todoItem {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    justify-items: start;
     border-bottom: 2px solid hsl(0, 0%, 98%);
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-
-
-.lightTheme .unchecked {
-    appearance: none;
-    background-color: hsl(0, 0%, 100%);
-    border: 0.1rem solid hsl(0, 0%, 90%);
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-    cursor: pointer;
+    padding: 0.5rem 0;
 
 }
 
-.lightTheme .checked {
-    appearance: none;
-    margin: 0;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-    background: url(../assets/icon-check.svg) no-repeat 7px 7px, linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+.lightTheme .todoItem .checkbox:checked {
+    background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
     border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 
 }
 
-.lightTheme .strike {
+.lightTheme .textStriked {
     text-decoration: line-through;
     color: hsl(233, 11%, 84%);
 }
 
+.lightTheme .iconCross {
+    justify-self: flex-end;
+}
 
 
 .lightTheme .todoCounter {
@@ -97,107 +47,44 @@
     font-size: 0.75rem;
 }
 
-.lightTheme .todoMenu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0.5rem;
-    padding: 0 1rem;
-    top: 11rem;
-    width: 70vw;
-}
-
-.lightTheme .menuItem:hover {
-    color: hsl(220, 98%, 61%);
-}
-
-
 /* Dark theme colours */
-.darkTheme .todoFormContainer {
-    background-color: hsl(235, 24%, 19%);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 0 2rem;
-    position: absolute;
-    top: 7rem;
-    width: 70vw;
-    display: flex;
-    gap: 1rem;
-}
-
-.darkTheme .todoForm {
-    outline: none;
-    border: none;
-    background-color: hsl(235, 24%, 19%);
-}
-
-
-.darkTheme input::placeholder {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.darkTheme .checkbox {
-    appearance: none;
-    background-color: hsl(235, 24%, 19%);
-    border: 0.1rem solid hsl(0, 0%, 90%);
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-}
-
-
 .darkTheme .todoContainer {
-    margin: 0 2rem;
     background-color: hsl(235, 24%, 19%);
     border-radius: 0.5rem;
     position: absolute;
     padding: 0 1rem;
     top: 11rem;
-    width: 70vw;
+    width: 80vw;
 
 }
 
 .darkTheme .todoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.darkTheme .todoItem {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1fr;
+    justify-items: start;
     border-bottom: 2px solid hsl(0, 0%, 98%);
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-
-.darkTheme .unchecked {
-    appearance: none;
-    background-color: hsl(235, 24%, 19%);
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.1rem solid hsl(0, 0%, 90%);
-    border-radius: 50%;
-    transform: translateY(-0.075em);
+    padding: 0.5rem 0;
 
 }
 
-.darkTheme .checked {
-    background: url(../assets/icon-check.svg) no-repeat 7px 7px, linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+.darkTheme .todoItem .checkbox:checked {
+    background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
     border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 
 }
 
-.darkTheme .strike {
+.darkTheme .textStriked {
     text-decoration: line-through;
     color: hsl(233, 11%, 84%);
 }
 
 .darkTheme .iconCross {
-    justify-self: end;
+    justify-self: flex-end;
 }
 
 .darkTheme .todoCounter {
@@ -208,21 +95,4 @@
     color: hsl(233, 11%, 84%);
     background-color: hsl(235, 24%, 19%);
     font-size: 0.75rem;
-}
-
-.darkTheme .todoMenu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem;
-    background-color: hsl(235, 24%, 19%);
-    border-radius: 0.5rem;
-    padding: 0 1rem;
-    top: 11rem;
-    width: 70vw;
-}
-
-.darkTheme .menuItem:hover {
-    color: hsl(220, 98%, 61%);
 }
