@@ -4,7 +4,6 @@ import {
   checkTodo,
   selectCount,
   selectTodos,
-  selectIsDarkTheme,
 } from "../redux/appManagerSlice";
 import iconCross from "../assets/icon-cross.svg";
 import "../styles/Todos.css";
@@ -13,7 +12,6 @@ const Todos = () => {
   const dispatch = useDispatch();
   const todos = useSelector(selectTodos);
   const count = useSelector(selectCount);
-  const isDarkTheme = useSelector(selectIsDarkTheme);
 
   const onTodoChecked = (id: number) => {
     dispatch(checkTodo(id));
@@ -25,70 +23,41 @@ const Todos = () => {
     console.log("item removed");
   };
 
-  const clearCompleted = (id: number) => {
-    todos.filter((item) => {
-      item.isDone;
-      dispatch(removeTodo(id));
-      console.log("clear completed");
-    });
-  };
-
-  //calculate the total todos
-  let total = 0;
-  todos.forEach((item) => {
-    if (item.id) {
-      total++;
-    }
-  });
-
   return (
     <>
-      <div
-        className={`todoContainer ${isDarkTheme ? "darkTheme" : "lightTheme"}`}
-      >
-        {count > 0 &&
-          todos.map((item) => {
-            return (
-              <ul className="todoList">
-                <li className="todoItem" key={item.id} draggable="true">
-                  {" "}
-                  <input
-                    onClick={() => onTodoChecked(item.id)}
-                    className={item.isDone ? "checkbox:checked" : "checkbox"}
-                    type="checkbox"
-                  />{" "}
-                  <label
-                    className={item.isDone ? "textStriked" : "text"}
-                    htmlFor="InputId"
-                  >
-                    {item.name}
-                  </label>
-                  <img
-                    className="iconCross"
-                    src={iconCross}
-                    alt="cross-icon"
-                    key={item.id}
-                    onClick={() => onTodoDone(item.id)}
-                  />
-                </li>
-              </ul>
-            );
-          })}
-        {count === 0 && (
-          <>
-            <p>No todos yet.</p>
-          </>
-        )}
-
-        <div
-          className={`todoCounter ${isDarkTheme ? "darkTheme" : "lightTheme"}`}
-        >
-          <p className="counter"> {total} items left </p>
-          <button className="clearButton" onClick={() => clearCompleted()}>
-            Clear Completed
-          </button>
-        </div>
-      </div>
+      {count > 0 &&
+        todos.map((item) => {
+          return (
+            <ul className="todoList">
+              <li className="todoItem" key={item.id} draggable="true">
+                {" "}
+                <input
+                  onClick={() => onTodoChecked(item.id)}
+                  className={item.isDone ? "checkbox:checked" : "checkbox"}
+                  type="checkbox"
+                />{" "}
+                <label
+                  className={item.isDone ? "textStriked" : "text"}
+                  htmlFor="InputId"
+                >
+                  {item.name}
+                </label>
+                <img
+                  className="iconCross"
+                  src={iconCross}
+                  alt="cross-icon"
+                  key={item.id}
+                  onClick={() => onTodoDone(item.id)}
+                />
+              </li>
+            </ul>
+          );
+        })}
+      {count === 0 && (
+        <>
+          <p>No todos yet.</p>
+        </>
+      )}
     </>
   );
 };

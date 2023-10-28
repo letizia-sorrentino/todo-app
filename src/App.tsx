@@ -5,6 +5,7 @@ import Todos from "./components/Todos";
 import Footer from "./components/Footer";
 import AddTodoForm from "./components/AddTodoForm";
 import TodosMenu from "./components/TodosMenu";
+import TodosCounter from "./components/TodosCounter";
 import "./styles/App.css";
 
 const App = () => {
@@ -16,7 +17,10 @@ const App = () => {
         <div className="AppMain">
           <Header />
           <AddTodoForm />
-          <Todos />
+          <div className="todoContainer">
+            <Todos />
+            <TodosCounter />
+          </div>
           <TodosMenu />
         </div>
         <Footer />

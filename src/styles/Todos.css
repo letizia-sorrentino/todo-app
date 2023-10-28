@@ -1,13 +1,4 @@
 /* Light theme colours */
-.lightTheme .todoContainer {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0.5rem;
-    position: absolute;
-    padding: 0 1rem;
-    top: 11rem;
-    width: 80vw;
-}
-
 .lightTheme .todoList {
     list-style-type: none;
     padding: 0;
@@ -37,25 +28,8 @@
     justify-self: flex-end;
 }
 
-.lightTheme .todoCounter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: hsl(236, 9%, 61%);
-    font-size: 0.75rem;
-}
 
 /* Dark theme colours */
-.darkTheme .todoContainer {
-    background-color: hsl(235, 24%, 19%);
-    border-radius: 0.5rem;
-    position: absolute;
-    padding: 0 1rem;
-    top: 11rem;
-    width: 80vw;
-
-}
-
 .darkTheme .todoList {
     list-style-type: none;
     padding: 0;
@@ -83,14 +57,4 @@
 
 .darkTheme .iconCross {
     justify-self: flex-end;
-}
-
-.darkTheme .todoCounter {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    color: hsl(233, 11%, 84%);
-    background-color: hsl(235, 24%, 19%);
-    font-size: 0.75rem;
 }

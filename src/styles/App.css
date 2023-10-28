@@ -1,7 +1,25 @@
 /* Light theme colours */
 .lightTheme {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 0%);
+}
+
+.lightTheme .AppMain {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.lightTheme .todoContainer {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 0 1rem;
+  top: 11rem;
+  width: 80vw;
 }
 
 /* Dark theme colours */
@@ -10,13 +28,23 @@
   color: hsl(0, 0%, 100%);
 }
 
-.AppMain {
+.darkTheme .AppMain {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(235, 21%, 11%);
+
+}
+.darkTheme .todoContainer {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 0 1rem;
+  top: 11rem;
+  width: 80vw;
+
 }
 
 button {

@@ -31,6 +31,17 @@ export const appManagerSlice = createSlice({
       }
     },
 
+    // clearCompleted: (state, action) => {
+    //   const todosCompleted = state.todos.filter(
+    //     (todo) => (todosCompleted.isDone = !todosCompleted.isDone)
+    //   );
+    // },
+
+    // filterTodos: (state, action) => {
+    //   const {filterCondition} = action.payload;
+    //   return state.todos.filter(todo => todo.isDone === filterCondition)
+    // },
+
     toggleTheme: (state) => {
       state.isDarkTheme = !state.isDarkTheme;
     },
