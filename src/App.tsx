@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { selectIsDarkTheme } from "./redux/appManagerSlice";
 import Header from "./components/Header";
-import Todos from "./components/Todos";
+import TodosList from "./components/TodosList";
 import Footer from "./components/Footer";
 import AddTodoForm from "./components/AddTodoForm";
-import TodosMenu from "./components/TodosMenu";
+import FilterButtons from "./components/FilterButtons";
 import TodosCounter from "./components/TodosCounter";
 import "./styles/App.css";
 
@@ -18,10 +18,10 @@ const App = () => {
           <Header />
           <AddTodoForm />
           <div className="todoContainer">
-            <Todos />
+            <TodosList />
             <TodosCounter />
           </div>
-          <TodosMenu />
+          <FilterButtons />
         </div>
         <Footer />
       </div>

@@ -2,30 +2,35 @@
 
 .lightTheme .todosMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 2rem;
     background-color: hsl(0, 0%, 100%);
+    color: hsl(236, 9%, 61%);
     border-radius: 0.5rem;
-    padding: 0 1rem;
+    padding: 1rem;
     top: 11rem;
     width: 80vw;
+    font-weight: 700;
 }
 
 
 /* Dark theme colours */
 .darkTheme .todosMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 2rem;
     background-color: hsl(235, 24%, 19%);
+    color: hsl(236, 9%, 61%);
     border-radius: 0.5rem;
-    padding: 0 1rem;
+    padding:  1rem;
     top: 11rem;
     width: 80vw;
+    font-weight: 700;
+
 }
 
-.menuItem:hover {
+.filter:hover {
     color: hsl(220, 98%, 61%);
 }

@@ -26,21 +26,26 @@ export const appManagerSlice = createSlice({
       const checkedTodo = state.todos.find(
         (todo) => todo.id === action.payload
       );
+
       if (checkedTodo) {
         checkedTodo.isDone = !checkedTodo.isDone;
       }
     },
 
-    // clearCompleted: (state, action) => {
-    //   const todosCompleted = state.todos.filter(
-    //     (todo) => (todosCompleted.isDone = !todosCompleted.isDone)
-    //   );
-    // },
+    completeTodos: (state, action) => {
+      const clearAllCompleted =
+        action.payload === null || action.payload === undefined;
 
-    // filterTodos: (state, action) => {
-    //   const {filterCondition} = action.payload;
-    //   return state.todos.filter(todo => todo.isDone === filterCondition)
-    // },
+      if (clearAllCompleted) {
+        state.todos = state.todos.filter((todo) => !todo.isDone);
+      } else {
+        state.todos.map((todo) => todo.id === action.payload);
+      }
+    },
+
+    setFilter: (state, action) => {
+      state.filter = action.payload;
+    },
 
     toggleTheme: (state) => {
       state.isDarkTheme = !state.isDarkTheme;
@@ -49,12 +54,19 @@ export const appManagerSlice = createSlice({
 });
 
 //export actions
-export const { addTodo, removeTodo, checkTodo, toggleTheme } =
-  appManagerSlice.actions;
+export const {
+  addTodo,
+  removeTodo,
+  checkTodo,
+  completeTodos,
+  setFilter,
+  toggleTheme,
+} = appManagerSlice.actions;
 
 //export data
 export const selectTodos = (state: RootState) => state.appManager.todos;
 export const selectCount = (state: RootState) => state.appManager.count;
+export const selectFilter = (state: RootState) => state.appManager.filter;
 export const selectIsDarkTheme = (state: RootState) =>
   state.appManager.isDarkTheme;
 
