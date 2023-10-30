@@ -8,12 +8,17 @@
     display: grid;
     grid-template-columns: 2rem 1fr 1fr;
     justify-items: start;
-    border-bottom: 2px solid hsl(0, 0%, 98%);
+    border-bottom: 0.1rem solid hsl(0, 0%, 98%);
     padding: 0.5rem 0;
-
+    cursor: pointer;
 }
 
-.lightTheme .todoItem .checkbox:checked {
+.lightTheme .todoItem input[type="checkbox"]:hover {
+    border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    cursor: pointer;
+}
+
+.lightTheme .todoItem input[type="checkbox"]:checked {
     background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
     border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 
@@ -28,7 +33,6 @@
     justify-self: flex-end;
 }
 
-
 /* Dark theme colours */
 .darkTheme .todoList {
     list-style-type: none;
@@ -39,9 +43,14 @@
     display: grid;
     grid-template-columns: 2rem 1fr 1fr;
     justify-items: start;
-    border-bottom: 2px solid hsl(0, 0%, 98%);
-    padding: 0.5rem 0;
+    border-bottom: 0.05rem solid hsl(233, 11%, 84%);
+    padding: 0.5rem 0 1rem 0;
+    cursor: pointer;
+}
 
+.darkTheme .todoItem:hover {
+    border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    cursor: pointer;
 }
 
 .darkTheme .todoItem .checkbox:checked {
