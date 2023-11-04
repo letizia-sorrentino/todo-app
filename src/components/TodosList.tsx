@@ -43,7 +43,7 @@ const TodosList = () => {
               {" "}
               <input
                 onClick={() => onTodoChecked(todo.id)}
-                className={todo.isDone ? "checkbox:checked" : "checkbox"}
+                className={todo.isDone ? "done" : "undone"}
                 type="checkbox"
               />{" "}
               <label
