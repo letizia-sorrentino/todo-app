@@ -37,11 +37,11 @@ input[type="checkbox" i] {
     height: 1.15em;
     border-radius: 50%;
     transform: translateY(-0.075em);
-    border: 0.1rem solid transparent;
-    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)), url(/Users/letizia/vs_code/todo-app/src/assets/icon-check.svg);
+    background-image: url(src/assets/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 
 .lightTheme .textStriked {
@@ -82,17 +82,16 @@ input[type="checkbox" i] {
 }
 
 .darkTheme .done {
-
     margin: 0;
     font: inherit;
     width: 1.15em;
     height: 1.15em;
     border-radius: 50%;
     transform: translateY(-0.075em);
-    border: 0.1rem solid transparent;
-    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)), url(/Users/letizia/vs_code/todo-app/src/assets/icon-check.svg);
+    background-image: url(src/assets/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .darkTheme .textStriked {
