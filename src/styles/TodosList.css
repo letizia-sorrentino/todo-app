@@ -38,7 +38,7 @@ input[type="checkbox" i] {
     border-radius: 50%;
     transform: translateY(-0.075em);
     background-color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-    border: 0.1rem solid linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: 0.1rem solid transparent;
     background: url(/Users/letizia/vs_code/todo-app/src/assets/icon-check.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -90,8 +90,8 @@ input[type="checkbox" i] {
     height: 1.15em;
     border-radius: 50%;
     transform: translateY(-0.075em);
-    background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
-    border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    background-color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: 0.1rem solid transparent;
     background: url(/Users/letizia/vs_code/todo-app/src/assets/icon-check.svg);
     background-repeat: no-repeat;
     background-position: center;
