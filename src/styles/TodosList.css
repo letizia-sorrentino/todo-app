@@ -39,6 +39,9 @@ input[type="checkbox" i] {
     transform: translateY(-0.075em);
     background-color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     border: 0.1rem solid linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background: url(/Users/letizia/vs_code/todo-app/src/assets/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -80,7 +83,7 @@ input[type="checkbox" i] {
 }
 
 .darkTheme .done {
-    
+
     margin: 0;
     font: inherit;
     width: 1.15em;
@@ -89,7 +92,9 @@ input[type="checkbox" i] {
     transform: translateY(-0.075em);
     background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
     border-color: 0.1rem solid linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
-
+    background: url(/Users/letizia/vs_code/todo-app/src/assets/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .darkTheme .textStriked {
