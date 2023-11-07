@@ -42,8 +42,6 @@ input[type="checkbox" i] {
     background-position: center;
 }
 
-
-
 .lightTheme .textStriked {
     text-decoration: line-through;
     color: hsl(233, 11%, 84%);
@@ -101,4 +99,12 @@ input[type="checkbox" i] {
 
 .darkTheme .iconCross {
     justify-self: flex-end;
+}
+
+
+/* Media Queries */
+@media (min-width:600px) {
+    .todoContainer {
+        max-width: 24rem;
+    }
 }

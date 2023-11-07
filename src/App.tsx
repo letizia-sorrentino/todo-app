@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import TodosList from "./components/TodosList";
 import Footer from "./components/Footer";
 import AddTodoForm from "./components/AddTodoForm";
-import FilterButtons from "./components/FilterButtons";
 import TodosCounter from "./components/TodosCounter";
 import "./styles/App.css";
 
@@ -21,7 +20,6 @@ const App = () => {
             <TodosList />
             <TodosCounter />
           </div>
-          <FilterButtons />
         </div>
         <Footer />
       </div>

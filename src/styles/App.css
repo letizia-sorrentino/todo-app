@@ -20,6 +20,7 @@
   padding: 0 1rem;
   top: 11rem;
   width: 80vw;
+  box-shadow: hsla(249, 59%, 11%, 0.15) 0px 3rem 6.25rem 0px;
 }
 
 /* Dark theme colours */
@@ -37,6 +38,7 @@
   background-color: hsl(235, 21%, 11%);
 
 }
+
 .darkTheme .todoContainer {
   background-color: hsl(235, 24%, 19%);
   border-radius: 0.5rem;
@@ -60,7 +62,11 @@ button {
 /* Media Queries */
 
 /* Tablet */
-@media (min-width:600px) {}
+@media (min-width:600px) {
+  .todoContainer {
+    top: 20rem;
+  }
+}
 
 /* Desktop */
 @media (min-width:960px) {}

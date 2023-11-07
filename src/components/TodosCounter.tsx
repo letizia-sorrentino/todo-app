@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectTodos, completeTodos } from "../redux/appManagerSlice";
+import FilterButtons from "../components/FilterButtons";
+
 import "../styles/TodosCounter.css";
 
 const TodosCounter = () => {
@@ -18,6 +20,7 @@ const TodosCounter = () => {
     <>
       <div className="todosCounter">
         <p className="counter"> {total} items left </p>
+        <FilterButtons />
         <button className="clearButton" onClick={() => clearCompleted()}>
           Clear Completed
         </button>

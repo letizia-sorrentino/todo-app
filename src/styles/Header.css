@@ -10,7 +10,7 @@
 .headerContainer {
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 80vw;
   top: 2.5rem;
   justify-content: space-between;
 }
@@ -19,14 +19,13 @@
   height: 1.5rem;
   width: 1.5rem;
   position: absolute;
-  left: 80vw;
+  left: 78vw;
 }
 
 
 .appTitle {
   position: absolute;
   color: hsl(0, 0%, 100%);
-  margin-left: 2rem;
   margin-top: 0;
   font-size: 2rem;
 }

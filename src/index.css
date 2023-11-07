@@ -1,7 +1,7 @@
 :root {
   font-family: Josefin Sans, Arial, sans-serif;
   font-weight: 400, 700;
-  font-size: 1rem;
+  font-size: 1.125rem;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -10,7 +10,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
 body {
   margin: 0;
   display: flex;
@@ -18,5 +17,4 @@ body {
   justify-content: space-between;
   min-width: 320px;
   min-height: 100vh;
-  font-size: 1.125rem;
 }

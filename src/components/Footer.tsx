@@ -8,7 +8,11 @@ const Footer = () => {
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Letizia S</a>.
+        . Coded by{" "}
+        <a href="https://letiziasorrentino.com/" target="_blank">
+          Letizia S
+        </a>
+        .
       </div>
     </div>
   );

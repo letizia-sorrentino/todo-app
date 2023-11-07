@@ -69,3 +69,11 @@
     border-radius: 50%;
     transform: translateY(-0.075em);
 }
+
+/* Media Queries */
+@media (min-width:600px) {
+
+    .todoFormContainer {
+        max-width: 24rem;
+    }
+}

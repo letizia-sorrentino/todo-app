@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     color: hsl(236, 9%, 61%);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -13,5 +13,6 @@
     align-items: center;
     color: hsl(236, 9%, 61%);
     background-color: hsl(235, 24%, 19%);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
+
