@@ -19,7 +19,7 @@ const TodosCounter = () => {
   return (
     <>
       <div className="todosCounter">
-        <p className="counter"> {total} items left </p>
+        <button className="counter"> {total} items left </button>
         <FilterButtons />
         <button className="clearButton" onClick={() => clearCompleted()}>
           Clear Completed

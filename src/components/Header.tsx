@@ -14,16 +14,6 @@ const Header = () => {
 
   return (
     <>
-      <img
-        className="headerImage"
-        src={isDarkTheme ? mobileDark : mobileLight}
-        alt="mobile-background"
-      />
-      <img
-        className="headerImageDesktop"
-        src={isDarkTheme ? desktopDark : desktopLight}
-        alt="desktop-background"
-      />
       <div className="headerContainer">
         <h1 className="appTitle">TO DO</h1>
         <img
@@ -34,7 +24,18 @@ const Header = () => {
           src={isDarkTheme ? iconSun : iconMoon}
           alt="icon-mode"
         />
+        
       </div>
+      <img
+        className="headerImage"
+        src={isDarkTheme ? mobileDark : mobileLight}
+        alt="mobile-background"
+      />
+      <img
+        className="headerImageDesktop"
+        src={isDarkTheme ? desktopDark : desktopLight}
+        alt="desktop-background"
+      />
     </>
   );
 };

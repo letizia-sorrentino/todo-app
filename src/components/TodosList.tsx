@@ -62,7 +62,7 @@ const TodosList = () => {
           </ul>
         ))
       ) : (
-        <p>No todos yet.</p>
+        <p className="emptyTodos">No todos yet.</p>
       )}
     </>
   );

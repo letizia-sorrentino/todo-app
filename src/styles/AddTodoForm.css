@@ -1,30 +1,26 @@
-/* Light theme colours */
-.lightTheme .todoFormContainer {
-    background-color: hsl(0, 0%, 100%);
+/* General styles */
+.todoFormContainer {
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 0 2rem;
     position: absolute;
-    top: 7rem;
+    top: 6rem;
     width: 80vw;
     display: flex;
     gap: 1rem;
 }
 
-.lightTheme .todoForm {
+.todoForm {
     outline: none;
     border: none;
-    background-color: hsl(0, 0%, 100%);
-
 }
 
-.lightTheme input::placeholder {
+input::placeholder {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.lightTheme .checkbox {
+.checkbox {
     appearance: none;
-    background-color: hsl(0, 0%, 100%);
     border: 0.1rem solid hsl(0, 0%, 90%);
     margin: 0;
     font: inherit;
@@ -32,42 +28,33 @@
     height: 1.15em;
     border-radius: 50%;
     transform: translateY(-0.075em);
+}
+
+/* Light theme colours */
+.lightTheme .todoFormContainer {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.lightTheme .todoForm {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.lightTheme .checkbox {
+    background-color: hsl(0, 0%, 100%);
 }
 
 
 /* Dark theme colours */
 .darkTheme .todoFormContainer {
     background-color: hsl(235, 24%, 19%);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 0 2rem;
-    position: absolute;
-    top: 7rem;
-    width: 80vw;
-    display: flex;
-    gap: 1rem;
 }
 
 .darkTheme .todoForm {
-    outline: none;
-    border: none;
     background-color: hsl(235, 24%, 19%);
-}
-
-.darkTheme input::placeholder {
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .darkTheme .checkbox {
-    appearance: none;
     background-color: hsl(235, 24%, 19%);
-    border: 0.1rem solid hsl(0, 0%, 90%);
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
 }
 
 /* Media Queries */

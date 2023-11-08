@@ -1,14 +1,13 @@
-/* Light theme colours */
-.lightTheme .todoList {
+/* General Styles */
+.todoList {
     list-style-type: none;
     padding: 0;
 }
 
-.lightTheme .todoItem {
+.todoItem {
     display: grid;
     grid-template-columns: 2rem 1fr 1fr;
     justify-items: start;
-    border-bottom: 0.1rem solid hsl(0, 0%, 98%);
     padding: 0.5rem 0;
     cursor: pointer;
 }
@@ -17,10 +16,8 @@ input[type="checkbox" i] {
     appearance: none;
 }
 
-.lightTheme .undone {
+.undone {
     appearance: none;
-    background-color: hsl(0, 0%, 100%);
-    border: 0.1rem solid hsl(0, 0%, 90%);
     margin: 0;
     font: inherit;
     width: 1.15em;
@@ -30,7 +27,7 @@ input[type="checkbox" i] {
     cursor: pointer;
 }
 
-.lightTheme .done {
+.done {
     margin: 0;
     font: inherit;
     width: 1.15em;
@@ -40,6 +37,25 @@ input[type="checkbox" i] {
     background-image: url(src/assets/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.textStriked {
+    text-decoration: line-through;
+    color: hsl(233, 11%, 84%);
+}
+
+.iconCross {
+    justify-self: flex-end;
+}
+
+/* Light theme colours */
+.lightTheme .todoItem {
+    border-bottom: 0.1rem solid hsl(0, 0%, 98%);
+}
+
+.lightTheme .undone {
+    background-color: hsl(0, 0%, 100%);
+    border: 0.1rem solid hsl(0, 0%, 90%);
 }
 
 .lightTheme .textStriked {
@@ -47,64 +63,24 @@ input[type="checkbox" i] {
     color: hsl(233, 11%, 84%);
 }
 
-.lightTheme .iconCross {
-    justify-self: flex-end;
-}
-
 /* Dark theme colours */
-.darkTheme .todoList {
-    list-style-type: none;
-    padding: 0;
-}
-
 .darkTheme .todoItem {
-    display: grid;
-    grid-template-columns: 2rem 1fr 1fr;
-    justify-items: start;
     border-bottom: 0.05rem solid hsl(233, 11%, 84%);
-    padding: 0.5rem 0 1rem 0;
-    cursor: pointer;
 }
 
 .darkTheme .undone {
-    appearance: none;
     background-color: hsl(235, 24%, 19%);
     border: 0.1rem solid hsl(0, 0%, 90%);
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-    cursor: pointer;
 }
-
-.darkTheme .done {
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-    background-image: url(src/assets/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.darkTheme .textStriked {
-    text-decoration: line-through;
-    color: hsl(233, 11%, 84%);
-}
-
-.darkTheme .iconCross {
-    justify-self: flex-end;
-}
-
 
 /* Media Queries */
 @media (min-width:600px) {
+
     .todoContainer {
         max-width: 24rem;
+    }
+
+    .emptyTodos {
+        height: 10rem;
     }
 }

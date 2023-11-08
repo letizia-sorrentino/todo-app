@@ -1,6 +1,5 @@
 .headerImage {
   width: 100%;
-  position: relative;
 }
 
 .headerImageDesktop {
@@ -8,38 +7,45 @@
 }
 
 .headerContainer {
-  display: flex;
   position: absolute;
-  width: 80vw;
+  width: 85%;
   top: 2.5rem;
+  display: flex;
   justify-content: space-between;
-}
 
-.iconMode {
-  height: 1.5rem;
-  width: 1.5rem;
-  position: absolute;
-  left: 78vw;
 }
-
 
 .appTitle {
-  position: absolute;
   color: hsl(0, 0%, 100%);
   margin-top: 0;
   font-size: 2rem;
 }
 
+.iconMode {
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
-/* Desktop */
+
+
+/* Media Queries */
+@media (min-width:600px) {
+  .headerContainer {
+    max-width: 24rem;
+  }
+}
+
 @media (min-width:960px) {
   .headerImage {
     display: none;
   }
 
+  .headerContainer {
+    max-width: 26rem;
+  }
+
   .headerImageDesktop {
     display: block;
     width: 100%;
-    position: relative;
   }
 }

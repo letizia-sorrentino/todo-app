@@ -1,52 +1,18 @@
-/* Light theme colours */
-.lightTheme {
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 0%);
-}
-
-.lightTheme .AppMain {
+/* App Styles */
+.AppMain {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(0, 0%, 98%);
 }
 
-.lightTheme .todoContainer {
-  background-color: hsl(0, 0%, 100%);
+.todoContainer {
   border-radius: 0.5rem;
   position: absolute;
   padding: 0 1rem;
-  top: 11rem;
+  top: 10rem;
   width: 80vw;
-  box-shadow: hsla(249, 59%, 11%, 0.15) 0px 3rem 6.25rem 0px;
-}
-
-/* Dark theme colours */
-.darkTheme {
-  background-color: hsl(235, 21%, 11%);
-  color: hsl(0, 0%, 100%);
-}
-
-.darkTheme .AppMain {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-  align-items: center;
-  background-color: hsl(235, 21%, 11%);
-
-}
-
-.darkTheme .todoContainer {
-  background-color: hsl(235, 24%, 19%);
-  border-radius: 0.5rem;
-  position: absolute;
-  padding: 0 1rem;
-  top: 11rem;
-  width: 80vw;
-
 }
 
 button {
@@ -59,12 +25,43 @@ button {
   outline: inherit;
 }
 
+/* Light theme colours */
+.lightTheme {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 0%);
+}
+
+.lightTheme .AppMain {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.lightTheme .todoContainer {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: hsla(249, 59%, 11%, 0.15) 0px 3rem 6.25rem 0px;
+}
+
+/* Dark theme colours */
+.darkTheme {
+  background-color: hsl(235, 21%, 11%);
+  color: hsl(0, 0%, 100%);
+}
+
+.darkTheme .AppMain {
+  background-color: hsl(235, 21%, 11%);
+
+}
+
+.darkTheme .todoContainer {
+  background-color: hsl(235, 24%, 19%);
+}
+
+
 /* Media Queries */
 
 /* Tablet */
 @media (min-width:600px) {
   .todoContainer {
-    top: 20rem;
+    min-height: 15rem;
   }
 }
 

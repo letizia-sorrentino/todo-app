@@ -1,18 +1,25 @@
-.lightTheme .todosCounter {
+/* General Styles */
+.todosCounter {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: hsl(236, 9%, 61%);
     font-size: 0.9rem;
+}
+
+/* Light theme colours */
+.lightTheme .todosCounter {
     background-color: hsl(0, 0%, 100%);
 }
 
+/* Dark theme colours */
 .darkTheme .todosCounter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: hsl(236, 9%, 61%);
     background-color: hsl(235, 24%, 19%);
-    font-size: 0.9rem;
 }
 
+/* Media Queries */
+@media (min-width:600px) {
+    .todosCounter {
+      align-items: flex-end;
+    }
+  }
