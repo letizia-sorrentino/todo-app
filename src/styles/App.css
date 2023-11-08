@@ -13,6 +13,7 @@
   padding: 0 1rem;
   top: 10rem;
   width: 80vw;
+
 }
 
 button {
@@ -59,11 +60,7 @@ button {
 /* Media Queries */
 
 /* Tablet */
-@media (min-width:600px) {
-  .todoContainer {
-    min-height: 15rem;
-  }
-}
+@media (min-width:600px) {}
 
 /* Desktop */
 @media (min-width:960px) {}

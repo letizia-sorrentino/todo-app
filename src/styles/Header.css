@@ -26,8 +26,6 @@
   width: 1.5rem;
 }
 
-
-
 /* Media Queries */
 @media (min-width:600px) {
   .headerContainer {
