@@ -1,5 +1,7 @@
 .headerImage {
-  width: 100%;
+  width: 100vw;
+  height: auto;
+
 }
 
 .headerImageDesktop {
@@ -28,6 +30,10 @@
 
 /* Media Queries */
 @media (min-width:600px) {
+  .headerImage {
+    height: 14.75rem;
+  }
+
   .headerContainer {
     max-width: 24rem;
   }

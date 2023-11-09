@@ -28,7 +28,7 @@ input[type="checkbox" i] {
 
 .undone:hover {
     cursor: pointer;
-    border: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    box-shadow: 0 0 0 2px inset linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 
 .done {
