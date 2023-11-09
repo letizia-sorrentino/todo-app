@@ -60,7 +60,11 @@ button {
 /* Media Queries */
 
 /* Tablet */
-@media (min-width:600px) {}
+@media (min-width:600px) {
+  .todoContainer {
+    max-width: 24rem;
+  }
+}
 
 /* Desktop */
 @media (min-width:960px) {}

@@ -80,6 +80,10 @@ input[type="checkbox" i] {
         max-width: 24rem;
     }
 
+    .todoList {
+        max-width: 24rem;
+    }
+
     .emptyTodos {
         height: 10rem;
     }
