@@ -16,6 +16,7 @@
 }
 
 .filter:hover {
+    cursor: pointer;
     color: hsl(220, 98%, 61%);
 }
 

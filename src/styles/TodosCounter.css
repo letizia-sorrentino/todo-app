@@ -8,6 +8,10 @@
     padding: 1rem 0;
 }
 
+.clearButton:hover {
+    cursor: pointer;
+}
+
 /* Light theme colours */
 .lightTheme .todosCounter {
     background-color: hsl(0, 0%, 100%);
@@ -21,6 +25,6 @@
 /* Media Queries */
 @media (min-width:600px) {
     .todosCounter {
-      align-items: flex-end;
+        align-items: flex-end;
     }
-  }
+}
