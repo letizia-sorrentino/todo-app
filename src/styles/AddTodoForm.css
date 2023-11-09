@@ -61,6 +61,6 @@ input::placeholder {
 @media (min-width:600px) {
 
     .todoFormContainer {
-        max-width: 24rem;
+        max-width: 30rem;
     }
 }

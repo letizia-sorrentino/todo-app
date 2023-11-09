@@ -43,6 +43,13 @@
         padding: 0;
         border-radius: inherit;
         margin-top: 0;
-        max-width: 24rem;
+        width: 55vw;
+    }
+}
+
+
+@media (min-width: 960px) {
+    .todosMenu {
+        width: 40vw;
     }
 }

@@ -31,7 +31,6 @@ Users should be able to:
 - Clear all completed todos
 - Toggle light and dark mode
 
-
 ### Screenshot
 
 ![](./screenshot.jpg)

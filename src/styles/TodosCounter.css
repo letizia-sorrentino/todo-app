@@ -4,12 +4,13 @@
     justify-content: space-between;
     align-items: center;
     color: hsl(236, 9%, 61%);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     padding: 1rem 0;
 }
 
 .clearButton:hover {
     cursor: pointer;
+
 }
 
 /* Light theme colours */
@@ -26,5 +27,10 @@
 @media (min-width:600px) {
     .todosCounter {
         align-items: flex-end;
+    }
+
+    .counter,
+    .clearButton {
+        width: 8rem;
     }
 }

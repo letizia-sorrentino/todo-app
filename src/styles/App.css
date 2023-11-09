@@ -62,7 +62,7 @@ button {
 /* Tablet */
 @media (min-width:600px) {
   .todoContainer {
-    max-width: 24rem;
+    max-width: 30rem;
   }
 }
 

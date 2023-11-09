@@ -35,17 +35,13 @@
   }
 
   .headerContainer {
-    max-width: 24rem;
+    max-width: 30rem;
   }
 }
 
 @media (min-width:960px) {
   .headerImage {
     display: none;
-  }
-
-  .headerContainer {
-    max-width: 26rem;
   }
 
   .headerImageDesktop {
