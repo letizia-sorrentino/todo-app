@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/screenshots/mobileLight.jpg)
-![](./src/screenshots/mobileDark.jpg)
+![](./src/screenshots/todoAppScreenshot.jpg)
 
 ### Links
 
@@ -51,10 +50,8 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Redux Toolkit](https://redux-toolkit.js.org/) - a predictable state container for JavaScript applications
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
 
 ### What I learned
 
