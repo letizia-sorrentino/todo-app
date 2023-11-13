@@ -47,7 +47,11 @@ const TodosList = () => {
                 className={todo.isDone ? "done" : "undone"}
                 type="checkbox"
               />{" "}
-              <img className="iconCheck" src={IconCheck} alt="check-icon" />
+              <img
+                className={todo.isDone ? "iconCheck" : "displayNone"}
+                src={IconCheck}
+                alt="check-icon"
+              />
               <label
                 className={todo.isDone ? "textStriked" : "text"}
                 htmlFor="InputId"

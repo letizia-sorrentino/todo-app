@@ -14,6 +14,7 @@
 
 input[type="checkbox" i] {
     appearance: none;
+    position: relative;
 }
 
 .undone {
@@ -36,6 +37,13 @@ input[type="checkbox" i]:hover {
 }
 
 .iconCheck {
+    position: absolute;
+    transform: translate(45%, 45%);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.displayNone {
     display: none;
 }
 
@@ -46,7 +54,7 @@ input[type="checkbox" i]:hover {
     height: 1.15em;
     border-radius: 50%;
     transform: translateY(-0.075em);
-    background-image: url(src/assets/icon-check.svg), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
 }
