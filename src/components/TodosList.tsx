@@ -6,6 +6,7 @@ import {
   selectTodos,
   selectFilter,
 } from "../redux/appManagerSlice";
+import IconCheck from "../assets/icon-check.svg";
 import iconCross from "../assets/icon-cross.svg";
 import "../styles/TodosList.css";
 
@@ -46,6 +47,7 @@ const TodosList = () => {
                 className={todo.isDone ? "done" : "undone"}
                 type="checkbox"
               />{" "}
+              <img className="iconCheck" src={IconCheck} alt="check-icon" />
               <label
                 className={todo.isDone ? "textStriked" : "text"}
                 htmlFor="InputId"

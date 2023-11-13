@@ -35,6 +35,10 @@ input[type="checkbox" i]:hover {
 
 }
 
+.iconCheck {
+    display: none;
+}
+
 .done {
     margin: 0;
     font: inherit;
