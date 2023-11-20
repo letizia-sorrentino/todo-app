@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [] (https://www.frontendmentor.io/solutions/todo-app-built-with-react-redux-toolkit-typescript-and-css-2av5GZVvat)
-- Live Site URL: [](https://deft-swan-4ead6c.netlify.app/)
+- Solution URL: [link](https://www.frontendmentor.io/solutions/todo-app-built-with-react-redux-toolkit-typescript-and-css-2av5GZVvat)
+- Live Site URL: [link](https://deft-swan-4ead6c.netlify.app/)
 
 ## My process
 
